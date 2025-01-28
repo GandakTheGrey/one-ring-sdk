@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/test/dist
+/liblab-takehome/.vs/liblab-takehome
+/liblab-takehome/liblab-takehome.sln
+/liblab-takehome/packages/Microsoft.TypeScript.MSBuild.5.7.1
+/.vs
+/liblab-takehome/liblab-takehome/.vscode
+/liblab-takehome/liblab-takehome/dist
+/liblab-takehome/liblab-takehome/node_modules
+/liblab-takehome/liblab-takehome/obj/Debug
+/liblab-takehome/liblab-takehome/CHANGELOG.md
+/liblab-takehome/node_modules
