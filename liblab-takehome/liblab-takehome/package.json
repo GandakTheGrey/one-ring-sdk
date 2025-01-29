@@ -1,0 +1,39 @@
+{
+  "name": "liblab-takehome",
+  "version": "1.0.0",
+  "description": "The One SDK to rule The One API to rule them all.",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap",
+    "clean": "tsc --build --clean"
+  },
+  "keywords": [
+    "liblab",
+    "interview",
+    "Lord of the Rings",
+    "lotr",
+    "precious",
+    "Typescript",
+    "sdk"
+  ],
+  "author": "Dak Erwin",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "eslint": "^9.19.0",
+    "microbundle": "^0.15.1",
+    "typescript": "^5.7.3"
+  }
+}
