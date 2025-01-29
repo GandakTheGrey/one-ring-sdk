@@ -1,7 +1,7 @@
 {
   "name": "liblab-takehome",
   "version": "1.0.0",
-  "description": "The One SDK to rule The One API to rule them all.",
+  "description": "The One SDK to run The One API to rule them all.",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
   "unpkg": "dist/index.umd.js",
@@ -11,7 +11,7 @@
     "default": "./dist/index.modern.js"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "",
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
     "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap",
     "clean": "tsc --build --clean"

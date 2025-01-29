@@ -1,19 +1,19 @@
 type Config = {
     apiKey: string;
-    prefix?: string;
+    baseURL?: string;
 }
 
 export abstract class Base {
     private apiKey: string;
-    private prefix: string;
+    private baseURL: string;
 
     constructor(config: Config) {
         this.apiKey = config.apiKey;
-        this.prefix = config.prefix || "https://the-one-api.dev/v2";
+        this.baseURL = config.baseURL || "https://the-one-api.dev/v2";
     }
 
     protected async request<T>(endpoint: string, options?: RequestInit): Promise<T> {
-        const url = `${this.prefix}${endpoint}`;
+        const url = `${this.baseURL}${endpoint}`;
 
         const headers = {
             "Content-type": "application/json",

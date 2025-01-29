@@ -46,8 +46,19 @@ export class Quotes extends Base {
         });
     }
 
-    getQuotesFromMovieById(id: string): Promise<ResponseObject<Quote[]>> {
-        return this.request(`/movie/${id}/quote`).then(data => {
+    getQuotesFromMovieById(id: string, filter?: filterParams, sort?: sortParams): Promise<ResponseObject<Quote[]>> {
+        var params: string[] = [];
+
+        if (filter != null) {
+            for (const [key, value] of Object.entries(filter)) {
+                params.push(`${key}=${value}`);
+            }
+        }
+        if (sort) {
+            params.push(`sort=${sort.field}:${sort.order}`);
+        }
+
+        return this.request(`/movie/${id}/quote?${params.join("&")}`).then(data => {
             return {
                 result: data['docs'] as Quote[],
                 success: true
@@ -60,7 +71,22 @@ export class Quotes extends Base {
             };
         });
     }
-    getQuotesFromMovieByName(name: string): Promise<ResponseObject<Quote[]>> {
+    getQuotesFromMovieByName(name: string, filter?: filterParams, sort?: sortParams): Promise<ResponseObject<Quote[]>> {
+        var params: string[] = [];
+
+        if (filter != null) {
+            for (const [key, value] of Object.entries(filter)) {
+                params.push(`${key}=${value}`);
+            }
+        }
+        if (sort) {
+            params.push(`sort=${sort.field}:${sort.order}`);
+        }
+
+        if (params.length > 0) {
+            params.unshift('');
+        }
+
         return this.request(`/movie?name=${name}`).then(data => {
             try {
                 var movieId = data['docs'][0]['_id']

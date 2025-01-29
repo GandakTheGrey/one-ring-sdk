@@ -73,6 +73,6 @@ export class Movies extends Base {
                 success: false,
                 error: `Movie not found: ${e.message}`
             };
-        });;
+        });
     }
 }

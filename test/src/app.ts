@@ -67,7 +67,6 @@ client.allQuotes().then(val => {
         console.log('.')
 });
 
-// Fool of a Took
 client.allQuotes({ character: "5cd99d4bde30eff6ebccfe2e"}).then(val => {
     if (!val.success)
         throw Error("Pippin's Quotes Failed!")
