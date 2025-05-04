@@ -1,5 +1,5 @@
 {
-  "name": "one-ring-sdk",
+  "name": "one-ring-takehome",
   "version": "1.0.0",
   "description": "The One SDK to run The One API to rule them all.",
   "main": "dist/index.js",
