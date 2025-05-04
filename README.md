@@ -7,7 +7,7 @@ The One SDK to run The One API to rule them all!
 To install this SDK, run:
 
 ```sh
-npm install liblab-takehome
+npm install one-ring-takehome
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ You'll need to create an account at [The One API](https://the-one-api.dev/sign-u
 your API key. Once aquired, add this to your file:
 
 ```sh
-import TheOneSDK from "liblab-takehome";
+import TheOneSDK from "one-ring-takehome";
 
 const client = new TheOneSDK({
     apiKey: "YOU_API_KEY"
@@ -36,7 +36,7 @@ This SDK is designed to run API located at `https://the-one-api.dev/v2`. If you 
 configure your url in the constructor:
 
 ```sh
-import TheOneSDK from "liblab-takehome";
+import TheOneSDK from "one-ring-takehome";
 
 const client = new TheOneSDK({
     apiKey: "YOUR_API_KEY",
@@ -49,7 +49,7 @@ const client = new TheOneSDK({
 Test cases are included in this repo in the test directory. To run them:
 
 ```sh
-cd ./liblab-takehome
+cd ./one-ring-takehome
 npm run build
 tsc
 node ../test/dist/test/src/app.js
