@@ -1,4 +1,4 @@
-import TheOneSDK from '../../liblab-takehome/liblab-takehome/src/index';
+import TheOneSDK from '../../liblab-takehome/one-ring-sdk/src/index';
 
 // I've spent hours trying to fix jest or mocha configurations in my main package.
 // They're not working. Let's test manually

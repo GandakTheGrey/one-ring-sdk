@@ -6,7 +6,8 @@
 /liblab-takehome/.vs/liblab-takehome
 /liblab-takehome/liblab-takehome.sln
 /liblab-takehome/packages/Microsoft.TypeScript.MSBuild.5.7.1
-/.vs
+*/.vs
+.vs
 /liblab-takehome/liblab-takehome/.vscode
 /liblab-takehome/liblab-takehome/dist
 /liblab-takehome/liblab-takehome/node_modules

@@ -1,5 +1,5 @@
 {
-  "name": "liblab-takehome",
+  "name": "one-ring-sdk",
   "version": "1.0.0",
   "description": "The One SDK to run The One API to rule them all.",
   "main": "dist/index.js",
@@ -17,7 +17,6 @@
     "clean": "tsc --build --clean"
   },
   "keywords": [
-    "liblab",
     "interview",
     "Lord of the Rings",
     "lotr",
